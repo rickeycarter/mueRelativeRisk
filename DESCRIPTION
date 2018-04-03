@@ -1,0 +1,14 @@
+Package: mueRelativeRisk
+Title: Estimates the relative risk based on the ratio of median unbiased estimates
+Version: 0.1.0
+Authors@R: person("Rickey", "Carter", email = "carter.rickey@mayo.edu", role = c("aut", "cre"))
+Description: This package implements an estimator for relative risk based on the median unbiased estimator. The relative risk estimator is well defined and performs satisfactorily for a wide range of data configurations. The method is published and available freely here: \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2918902/}.
+Depends: R (>= 3.2.3)
+Imports: stats
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr

@@ -1,0 +1,35 @@
+---
+title: "Brief Package Introduction"
+author: "Rickey Carter"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+# Package Introduction
+
+This package calculates an estimate of the relative risk based on the ratio of two median unbiased estiamtes for a proportion. In addition, we enumerate the exact bootstrap confidence interval for estimate.  Details for the methods are available in [Carter et al (2010)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2918902/). This package replaces the previous SAS MACRO supplied with the paper.
+
+# Example from Publication
+
+The manuscript shows example data of from a renal transplant study. The study was monitoring the events of severe hypoglycemia at regular DSMB meetings. There was a desire to summarize the risk of hypoglycemia between the intensively managed patients relative to the routine glucose management strategy with the relative risk. At the first time period, there were 0/3 and 0/4 events in these two groups, respectively. Despite the zero cells, the MUE-based estimate of relative risk is well defined. In particular
+
+```{r}
+library(mueRelativeRisk)
+mue_rr(y1=0, n1=3, y2=0, n2=4, alpha=0.05)
+```
+
+The function does not currently extend to a vector of values for y1, y2, n1, and n2. However, such operations can be programmed outside the function using various combinations of apply. 
+
+Future releases of the package will include the MUE-based estimate for the odds ratio and risk difference. 
