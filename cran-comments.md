@@ -9,6 +9,8 @@
 
 * This is a new release.
 
+* (Revised Submission) The package description and title statement were revised as requested. 
+
 ## Reverse dependencies
 
 This is a new release, so there are no reverse dependencies.
