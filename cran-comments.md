@@ -9,6 +9,10 @@
 
 * This is a new release.
 
+* (Revised Submission) The package description and title statement were revised as requested. 
+
+* Minor version update to 0.1.1 to address CRAN website asking for a minor version update on upload. 
+
 ## Reverse dependencies
 
 This is a new release, so there are no reverse dependencies.
