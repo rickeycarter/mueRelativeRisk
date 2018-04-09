@@ -11,8 +11,11 @@
 
 * (Revised Submission) The package description and title statement were revised as requested. 
 
+<<<<<<< HEAD
 * Minor version update to 0.1.1 to address CRAN website asking for a minor version update on upload. 
 
+=======
+>>>>>>> 7587c98865e8b065d6be4cce4dcc066f999eb95d
 ## Reverse dependencies
 
 This is a new release, so there are no reverse dependencies.
